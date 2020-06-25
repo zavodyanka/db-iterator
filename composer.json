@@ -1,0 +1,23 @@
+{
+  "name": "zavodyanka/dbiterator",
+  "description": "Application implements iteration through tables",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Anna Zavodian",
+      "email": "zavodyanka@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "DbIterator": "src"
+    }
+  },
+  "require": {
+    "monolog/monolog": "1.9.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  }
+}
