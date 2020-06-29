@@ -10,7 +10,7 @@ $sql = 'SELECT * FROM `books`';
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
-$data = new TableIterator($stmt);
+$data = new TableIterator($stmt, [\PDO::ATTR_CURSOR => \PDO::CURSOR_SCROLL]);
 
 foreach ($data as $row) {
     echo sprintf(
