@@ -1,8 +1,9 @@
 <?php
+namespace DbIterator;
 
 class TableIterator implements \Iterator
 {
-    /** @var \PDOStatement */
+    /** @var PDOStatement */
     protected $pdoStatement;
 
     /** @var int */
@@ -34,8 +35,8 @@ class TableIterator implements \Iterator
     {
         $this->key++;
         $this->result = $this->pdoStatement->fetch(
-            \PDO::FETCH_OBJ,
-            \PDO::FETCH_ORI_ABS,
+            PDO::FETCH_OBJ,
+            PDO::FETCH_ORI_ABS,
             $this->key
         );
 
